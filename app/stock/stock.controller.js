@@ -8,7 +8,6 @@ const nseUtil = require('../../utils/nseUtil')
 const zerodhaUtil = require('../../utils/zerodhaUtil')
 const co = require('co')
 
-
 const formatRow = function (data) {
 
   data['symbol'] = data['Symbol']
@@ -176,7 +175,83 @@ const getIntradayStocks = function* () {
   const filteredMarginStocks = filterMarginStocks(marginStockList)
   return createStocks(dailyVolatileStocks, filteredMarginStocks)
 }
+
+const filterPreOpenMarketStocks = function (stocks, filteredMarginStocks) {
+
+  const filteredStocks = []
+  for (let i = 0; i < stocks.length; i++) {
+
+    for (let j=0; j < filteredMarginStocks.length; j++) {
+
+      let stock = stocks[i]
+      let marginStock = filteredMarginStocks[j]
+      if (stock.symbol === marginStock.symbol && stock.price >= constants.MIN_STOCK_CLOSE_VALUE && stock.price <= constants.MAX_STOCK_CLOSE_VALUE) {
+
+
+          stock.margin = marginStock.margin
+          filteredStocks.push(stock)
+        }
+      }
+    }
+
+  return filteredStocks
+}
+
+const formatPreOpenMarketStocksRow = function (data) {
+
+  const stock = {}
+  stock['symbol'] = data['symbol']
+  stock['price'] = parseFloat(data['iep'].replace(/,/g , ''))
+  stock['yesterdays close'] = parseFloat(data['pCls'].replace(/,/g , ''))
+  stock['change'] = parseFloat(data['chn'].replace(/,/g , ''))
+  stock['percentage change'] = parseFloat(data['perChn'].replace(/,/g , ''))
+  stock['quantity'] = parseInt(data['trdQnty'].replace(/,/g , ''))
+  stock['value in lakhs'] = parseFloat(data['iVal'].replace(/,/g , ''))
+  stock['52 week high'] = parseFloat(data['yHigh'].replace(/,/g , ''))
+  stock['52 week low'] = parseFloat(data['yLow'].replace(/,/g , ''))
+
+  return stock
+}
+
+const createPreOpenMarketStocks = function (preOpenMarketStocks, filteredMarginStocks) {
+
+  let stocks = []
+  const date = new Date()
+  const fileName = '' + date.getDate() + '_' + (date.getMonth() + 1) + '_' + date.getFullYear() + '.CSV'
+
+  const writeStream = fs.createWriteStream(constants.PRE_OPEN_MARKET_STOCKS_DIRECTORY_NAME +'/' + fileName)
+
+  preOpenMarketStocks.data.forEach(function (preOpenMarketStock) {
+
+    stocks.push(formatPreOpenMarketStocksRow(preOpenMarketStock))
+  })
+
+  let preOpenStocks = filterPreOpenMarketStocks(stocks, filteredMarginStocks)
+  preOpenStocks = _.orderBy(preOpenStocks, ['percentage change'], ['desc']);
+  csv
+    .write(preOpenStocks, {
+      headers: true
+    })
+    .pipe(writeStream)
+}
+
+const getPreOpenMarketStocks = async function () {
+
+  let marginStockList = null
+  let preOpenMarketStocks = null
+
+  try {
+    marginStockList = await zerodhaUtil.getMarginStockList()
+    preOpenMarketStocks = await nseUtil.getPreOpenMarketStocks()
+  } catch (err) {
+    console.log(err)
+  }
+
+  const filteredMarginStocks = filterMarginStocks(marginStockList)
+  return createPreOpenMarketStocks(preOpenMarketStocks, filteredMarginStocks)
+}
 module.exports = {
 
-  getIntradayStocks
+  getIntradayStocks,
+  getPreOpenMarketStocks
 }

@@ -99,7 +99,24 @@ const getDailyVolatileStocks = function () {
     })
 }
 
+const getPreOpenMarketStocks = function () {
+
+  const url = constants.DAILY_PRE_OPEN_MARKET_URL
+
+  const options = {
+    method: 'GET',
+    url: url
+  }
+
+  return httpUtil.makeRequest(options)
+    .then(function (data) {
+
+      return data
+    })
+}
+
 module.exports = {
   getPriceVolumeDeliverableData,
-  getDailyVolatileStocks
+  getDailyVolatileStocks,
+  getPreOpenMarketStocks
 }

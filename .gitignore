@@ -57,3 +57,5 @@ typings/
 # dotenv environment variables file
 .env
 
+pre_open_market_stocks/
+selected_stocks/
