@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b83b7096-a434-449e-86e9-ce32d12d4a8d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/13_10_2017.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/15_10_2017.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/16_10_2017.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/17_10_2017.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/22_10_2017.CSV" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/selected_stocks/25_10_2017.CSV" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stock/stock.controller.js" afterPath="$PROJECT_DIR$/app/stock/stock.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/constants.js" afterPath="$PROJECT_DIR$/utils/constants.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/nseUtil.js" afterPath="$PROJECT_DIR$/utils/nseUtil.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -68,16 +57,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stock.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/stock/stock.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="nseUtil.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/nseUtil.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,11 +87,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-464">
               <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -171,6 +160,7 @@
         <option value="$PROJECT_DIR$/utils/constants.js" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -381,12 +371,12 @@
       <workItem from="1509344338540" duration="217000" />
       <workItem from="1509442872679" duration="405000" />
       <workItem from="1509609148046" duration="212000" />
-      <workItem from="1511704069529" duration="6117000" />
+      <workItem from="1511704069529" duration="6590000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48507000" />
+    <option name="totallyTimeSpent" value="48980000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -438,14 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/zerodhaUtil.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -829,6 +811,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-464">
           <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
