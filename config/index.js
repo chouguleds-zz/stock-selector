@@ -1,4 +1,8 @@
-'use strict';
+'use strict'
 
-const environment = process.env.NODE_ENV || 'development';
-module.exports = require('./environment/' + environment + '.js')
+const path = require('path')
+
+module.exports = {
+
+  root: path.normalize(__dirname + '/../..')
+}

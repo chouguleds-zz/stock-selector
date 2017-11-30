@@ -1,47 +1,30 @@
 {
-  "name": "my_feeds",
+  "name": "stock-selector",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "mocha test --timeout 10000",
     "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chouguleds/my_feeds.git"
+    "url": "git+https://github.com/chouguleds/stock-selector.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chouguleds/my_feeds/issues"
+    "url": "https://github.com/chouguleds/stock-selector/issues"
   },
-  "homepage": "https://github.com/chouguleds/my_feeds#readme",
+  "homepage": "https://github.com/chouguleds/stock-selector#readme",
   "dependencies": {
-    "axios": "^0.16.2",
-    "bcrypt": "^1.0.2",
-    "bluebird": "^3.5.1",
-    "body-parser": "^1.17.1",
-    "co": "^4.6.0",
-    "csv": "^1.1.1",
-    "downloadjs": "^1.4.7",
-    "exceljs": "^0.6.1",
-    "express": "^4.15.2",
+    "axios": "0.16.2",
+    "bluebird": "3.5.1",
+    "co": "4.6.0",
     "fast-csv": "^2.4.1",
-    "helmet": "^3.5.0",
-    "joi": "^10.3.1",
-    "jsonwebtoken": "^7.3.0",
-    "lodash": "^4.17.4",
-    "mongoose": "^4.9.2",
-    "node-csv": "^0.1.2",
-    "querystring": "^0.2.0",
-    "tabletojson": "^0.6.0",
-    "x-ray": "^2.3.2",
-    "xlsx": "^0.11.5"
+    "lodash": "4.17.4",
+    "querystring": "0.2.0",
+    "tabletojson": "0.6.0",
+    "x-ray": "2.3.2"
   },
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-http": "^3.0.0",
-    "mocha": "^3.2.0"
-  }
+  "devDependencies": {}
 }

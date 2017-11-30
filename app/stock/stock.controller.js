@@ -1,12 +1,11 @@
 const csv = require('fast-csv')
 const fs = require('fs')
 const _ = require('lodash')
+const co = require('co')
 
 const constants = require('../../utils/constants')
-const httpUtil = require('../../utils/httpUtil')
 const nseUtil = require('../../utils/nseUtil')
 const zerodhaUtil = require('../../utils/zerodhaUtil')
-const co = require('co')
 
 const formatRow = function (data) {
 
@@ -78,7 +77,7 @@ const isGoodStock = function (stock, priceVolumeDeliverableData) {
   return isRecommendedStock
 }
 
-const filterStocks = function* (stocks, filteredMarginStocks) {
+const filterStocks = async function (stocks, filteredMarginStocks) {
 
   const filteredStocks = []
   let priceVolumeDeliverableData = null
@@ -91,7 +90,7 @@ const filterStocks = function* (stocks, filteredMarginStocks) {
       if (stock.symbol === marginStock.symbol) {
 
         try {
-          priceVolumeDeliverableData = yield nseUtil.getPriceVolumeDeliverableData(stock.symbol)
+          priceVolumeDeliverableData = await nseUtil.getPriceVolumeDeliverableData(stock.symbol)
         } catch (err) {
           console.log(err)
         }
@@ -160,14 +159,14 @@ const filterMarginStocks = function (stocks) {
   return marginStocks
 }
 
-const getIntradayStocks = function* () {
+const getIntradayStocks = async function () {
 
   let marginStockList = null
   let dailyVolatileStocks = null
 
   try {
-    marginStockList = yield zerodhaUtil.getMarginStockList()
-    dailyVolatileStocks = yield nseUtil.getDailyVolatileStocks()
+    marginStockList = await zerodhaUtil.getMarginStockList()
+    dailyVolatileStocks = await nseUtil.getDailyVolatileStocks()
   } catch (err) {
     console.log(err)
   }
