@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/chouguleds/stock-selector#readme",
   "dependencies": {
+    "async": "^2.6.0",
     "axios": "0.16.2",
     "bluebird": "3.5.1",
     "co": "4.6.0",
