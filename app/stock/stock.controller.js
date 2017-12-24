@@ -249,6 +249,13 @@ const getPreOpenMarketStocks = async function () {
   const filteredMarginStocks = filterMarginStocks(marginStockList)
   return createPreOpenMarketStocks(preOpenMarketStocks, filteredMarginStocks)
 }
+
+const getStocks = async function () {
+
+
+}
+
+
 module.exports = {
 
   getIntradayStocks,

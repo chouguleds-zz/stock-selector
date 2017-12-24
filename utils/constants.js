@@ -11,9 +11,12 @@ constants.MIN_STOCK_CLOSE_VALUE = 50
 constants.MAX_STOCK_CLOSE_VALUE = 600
 constants.MIN_TOTAL_VOLUME = 500000
 constants.MAX_DELIVERABLE_STOCK_PERCENTAGE = 40
+constants.BLUE_MIX = {
+  TONE_ANALYSER_URL: 'https://tone-analyzer-demo.ng.bluemix.net/api/tone'
+}
 constants.FEATURE_TOGGLE = {
   INTRADAY_STOCK_SELECTION: false,
-  PRE_OPEN_MARKET_STOCKS_SELECTION: true
+  PRE_OPEN_MARKET_STOCKS_SELECTION: false
 }
 
 module.exports = constants

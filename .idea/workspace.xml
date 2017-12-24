@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b83b7096-a434-449e-86e9-ce32d12d4a8d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/stock/stock.controller.js" afterPath="$PROJECT_DIR$/app/stock/stock.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/constants.js" afterPath="$PROJECT_DIR$/utils/constants.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/margin.html" afterPath="$PROJECT_DIR$/utils/margin.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,28 +26,28 @@
       <file leaf-file-name="stock.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/stock/stock.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3360">
-              <caret line="224" column="17" lean-forward="false" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
+            <state relative-caret-position="525">
+              <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="bluemix.controller.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/bluemix/bluemix.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+            <state relative-caret-position="79">
+              <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/index.js">
+      <file leaf-file-name="bluemix.service.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/bluemix/bluemix.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="42" lean-forward="false" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,28 +56,38 @@
       <file leaf-file-name="constants.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/constants.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="htmlUtil.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/htmlUtil.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="13" />
+            <state relative-caret-position="172">
+              <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="httpUtil.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/httpUtil.js">
+      <file leaf-file-name="nse.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/nse/nse.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="blumixUtil.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/blumixUtil.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -86,36 +98,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="margin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/margin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nseUtil.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/nseUtil.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -162,17 +144,20 @@
         <option value="$PROJECT_DIR$/utils/nseUtil.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/utils/constants.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes.js" />
-        <option value="$PROJECT_DIR$/utils/margin.html" />
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/config/environment/development.js" />
         <option value="$PROJECT_DIR$/utils/httpUtil.js" />
-        <option value="$PROJECT_DIR$/app/stock/stock.controller.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/utils/zerodhaUtil.js" />
         <option value="$PROJECT_DIR$/config/index.js" />
+        <option value="$PROJECT_DIR$/utils/margin.html" />
+        <option value="$PROJECT_DIR$/utils/constants.js" />
+        <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/app/stock/stock.controller.js" />
+        <option value="$PROJECT_DIR$/utils/blumixUtil.js" />
+        <option value="$PROJECT_DIR$/app/bluemix/bluemix.service.js" />
+        <option value="$PROJECT_DIR$/app/bluemix/bluemix.controller.js" />
       </list>
     </option>
   </component>
@@ -196,6 +181,9 @@
     <option name="width" value="1280" />
     <option name="height" value="800" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -211,6 +199,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -222,6 +211,12 @@
               <item name="stock-selector" type="b2602c69:ProjectViewProjectNode" />
               <item name="stock-selector" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="stock-selector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="stock-selector" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="bluemix" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="stock-selector" type="b2602c69:ProjectViewProjectNode" />
@@ -244,7 +239,6 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,11 +398,24 @@
       <workItem from="1512615959972" duration="264000" />
       <workItem from="1512618199368" duration="12000" />
       <workItem from="1512703235105" duration="300000" />
+      <workItem from="1512742723620" duration="43000" />
+      <workItem from="1512963541627" duration="255000" />
+      <workItem from="1513049504154" duration="338000" />
+      <workItem from="1513136329385" duration="78000" />
+      <workItem from="1513222842226" duration="45000" />
+      <workItem from="1513307551832" duration="152000" />
+      <workItem from="1513567239411" duration="287000" />
+      <workItem from="1513653575303" duration="545000" />
+      <workItem from="1513741253651" duration="17000" />
+      <workItem from="1513827183719" duration="94000" />
+      <workItem from="1513913893680" duration="21000" />
+      <workItem from="1514009863601" duration="738000" />
+      <workItem from="1514089023871" duration="3118000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66211000" />
+    <option name="totallyTimeSpent" value="71942000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -471,42 +478,18 @@
           <line>245</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/index.js</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="102" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/utils/httpUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/stock/stock.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/htmlUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="4" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/nseUtil.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -692,42 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/margin.html">
+    <entry file="file://$PROJECT_DIR$/utils/httpUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/constants.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="43" lean-forward="false" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/stock/stock.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3360">
-          <caret line="224" column="17" lean-forward="false" selection-start-line="224" selection-start-column="17" selection-end-line="224" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/zerodhaUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+        <state relative-caret-position="195">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -740,18 +691,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/httpUtil.js">
+    <entry file="file://$PROJECT_DIR$/utils/nseUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="108" column="3" lean-forward="false" selection-start-line="105" selection-start-column="2" selection-end-line="108" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/nseUtil.js">
+    <entry file="file://$PROJECT_DIR$/utils/margin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4254">
+          <caret line="6412" column="0" lean-forward="false" selection-start-line="6412" selection-start-column="0" selection-end-line="6412" selection-end-column="0" />
+          <folding>
+            <element signature="e#3094#3099#0" expanded="true" />
+            <element signature="e#3867#3872#0" expanded="true" />
+            <element signature="e#247183#247188#0" expanded="true" />
+            <element signature="e#247402#247408#1" expanded="true" />
+            <element signature="e#248480#248486#0" expanded="true" />
+            <element signature="e#248486#248492#0" expanded="true" />
+            <element signature="e#248492#248498#0" expanded="true" />
+            <element signature="e#248657#248663#0" expanded="true" />
+            <element signature="e#248663#248669#0" expanded="true" />
+            <element signature="e#248669#248675#0" expanded="true" />
+            <element signature="e#249410#249417#1" expanded="true" />
+            <element signature="e#258087#258092#0" expanded="true" />
+            <element signature="e#259505#259512#0" expanded="true" />
+            <element signature="e#259670#259677#0" expanded="true" />
+            <element signature="e#260590#260597#0" expanded="true" />
+            <element signature="e#263320#263326#0" expanded="true" />
+            <element signature="e#263980#263985#0" expanded="true" />
+            <element signature="e#264582#264587#0" expanded="true" />
+            <element signature="e#265252#265257#0" expanded="true" />
+            <element signature="e#265263#265270#0" expanded="true" />
+            <element signature="e#265393#265400#0" expanded="true" />
+            <element signature="e#265543#265550#0" expanded="true" />
+            <element signature="e#268268#268273#0" expanded="true" />
+            <element signature="e#268396#268401#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/zerodhaUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="76" lean-forward="false" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/constants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="69" column="12" lean-forward="true" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="12" />
+          <caret line="18" column="41" lean-forward="false" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="24" column="37" lean-forward="false" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/nse/nse.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/stock/stock.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="254" column="0" lean-forward="false" selection-start-line="254" selection-start-column="0" selection-end-line="254" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/blumixUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bluemix/bluemix.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bluemix/bluemix.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="9" column="14" lean-forward="true" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
           <folding />
         </state>
       </provider>
