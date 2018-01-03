@@ -1,19 +1,19 @@
 
 const bluemixService = require('./bluemix.service')
-
+const _ = require('lodash')
 
 
 const _getArticleScore = function (tones) {
 
   let score = 1
 
-  if(!tone || tone.length === 0) {
+  if(!tones || tones.length === 0) {
 
     score = 0.5
     return score
   }
 
-  forEach(tones, function (tone) {
+  _.forEach(tones, function (tone) {
 
     if (tone.tone_id === 'sadness') {
 
@@ -40,19 +40,20 @@ const _getArticleScore = function (tones) {
 
       score *= tone.score
     }
-
   })
   return score
 }
+
 const getSentiment = async function (text) {
 
   let sentiment = await bluemixService.getSentiment(text)
-  tones = sentiment.document_tone.tones
+ const tones = sentiment.document_tone.tones
 
   score = _getArticleScore(tones)
 
+  return score
 }
 
-module.exxports = {
-
+module.exports = {
+  getSentiment
 }
