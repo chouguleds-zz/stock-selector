@@ -7,13 +7,12 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "chougule.ds@gmail.com",
-    pass: "kapeedchode15"
+    pass: "password"
   }
 })
 
 const sendMail = function (path, subject) {
 
-  console.log(config.root)
   let mailOptions = {
     from: '"Deepak 👻" <chougule.ds@gmail.com>', // sender address
     to: 'chougule.ds@gmail.com', // list of receivers

@@ -77,7 +77,7 @@ constants.CHARTINK = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36',
     'x-requested-with': 'XMLHttpRequest',
     'x-devtools-emulate-network-conditions-client-id': '(952B7BDC5B2C593D55ED5812D0CE7F9D)',
-    'x-csrf-token': '3WqYdkirylSYKiO2qP5wD3jjsvDLZRKfjWI1n6XI',
+    'x-csrf-token': 'SBIabMFZtcOrgiAEUxkL4IekEqpEJGerxAOePmBQ',
     'origin': 'https://chartink.com',
     'accept': 'application/json, text/javascript, */*; q=0.01'
   },

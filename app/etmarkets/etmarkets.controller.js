@@ -16,28 +16,7 @@ const getNear52WeekStocks = async function (type) {
 const getHighPercentageStocks = async function () {
 
   const stocks = await etmarketsService.getPercentChangeStocks()
-  const filteredStocks = []
-
-  _.forEach(stocks.searchresult, function (stock) {
-
-    const stockInfo = {}
-
-    if(stock.percentChange >= 6) {
-
-      stockInfo.symbol = stock.asiancercticker
-      stockInfo.percentChange = stock.percentChange
-      stockInfo.sentiment = 'bearish'
-    }
-
-    if(stock.percentChange <= -6) {
-
-      stockInfo.symbol = stock.asiancercticker
-      stockInfo.percentChange = - stock.percentChange
-      stockInfo.sentiment = 'bullish'
-    }
-    filteredStocks.push(stockInfo)
-  })
-  return filteredStocks
+  return stocks.searchresult
 }
 
 module.exports = {

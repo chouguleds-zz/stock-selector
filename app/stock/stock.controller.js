@@ -458,7 +458,7 @@ const _formatStocks = function (stocks) {
     delete stock['margin']
     delete stock['value in lakhs']
 
-    stock['keys'] = Object.keys(data).length - 12
+    stock['keys'] = Object.keys(data).length - 13
     stock['high gap close'] = data['high gap close']
 
     stock['52week high breakout'] = data['52week high breakout']
@@ -492,6 +492,9 @@ const _formatStocks = function (stocks) {
     stock['rsi bearish'] = data['rsi bearish']
     stock['rsi trending down'] = data['rsi trending down']
     stock['rsi overbought'] = data['rsi overbought']
+
+    stock['gap high open'] = data['gap high open']
+    stock['gap low open'] = data['gap low open']
 
     finalStocks.push(stock)
   })
@@ -550,98 +553,14 @@ const _getThreeDayCloseScore = async function (stocks) {
 
 const _getOpenPriceScore = function (stocks) {
 
-  _.forEach(stocks,function (stock) {
+  _.forEach(stocks, function (stock) {
 
     const pchange = stock['percentage change']
 
-    if (stock['high gap close'] && stock.score > 0) {
-
-      if (pchange <= -2) {
-
-        stock.score *= - pchange
-        return false
-      }
-    }
-
-    if (stock['high gap close'] && stock.score < 0) {
-
-      if (pchange >= 2) {
-
-        stock.score *=  pchange
-        return false
-      }
-    }
-
-    if (pchange >= 0) {
-
-      if(pchange <= 1.5) {
-
-        if (stock.score < 0) {
-          stock.score = stock.score - 4 - 2
-        } else {
-
-          stock.score = stock.score + 4
-        }
-      } else if (pchange <= 3) {
-
-        if (stock.score < 0) {
-          stock.score = stock.score - 3 - 2
-        } else {
-
-          stock.score = stock.score + 3
-        }
-      } else if (pchange <= 7) {
-
-        if (stock.score < 0) {
-          stock.score = stock.score - 2 - 2
-        } else {
-
-          stock.score = stock.score + 2
-        }
-      } else {
-
-        if (stock.score < 0) {
-          stock.score = stock.score - 1 - 2
-        } else {
-
-          stock.score = stock.score + 1
-        }
-      }
-    } else {
-
-      if(pchange >= -1.5) {
-
-        if (stock.score > 0) {
-          stock.score = stock.score + 4 + 2
-        } else {
-
-          stock.score = stock.score - 4
-        }
-      } else if (pchange >= -3) {
-
-        if (stock.score > 0) {
-          stock.score = stock.score + 3 + 2
-        } else {
-
-          stock.score = stock.score - 3
-        }
-      } else if (pchange >= -7) {
-
-        if (stock.score > 0) {
-          stock.score = stock.score + 2 + 2
-        } else {
-
-          stock.score = stock.score - 2
-        }
-      } else {
-
-        if (stock.score > 0) {
-          stock.score = stock.score + 1 + 2
-        } else {
-
-          stock.score = stock.score - 1
-        }
-      }
+    if(pchange >= 5) {
+      _addScore(stock, -4, 'gap high open')
+    } else if(pchange <= -5) {
+      _addScore(stock, 4, 'gap low open')
     }
   })
 }
@@ -660,31 +579,10 @@ const _getHighGapCloseScore = async function (stocks) {
 
   _.forEach(highGapCloseStocks, function (highGapCloseStock) {
 
-    if(stocks[highGapCloseStock.symbol] !== undefined ) {
+    if(stocks[highGapCloseStock.asiancercticker] !== undefined ) {
 
-      const stock = stocks[highGapCloseStock.symbol]
-
-      if (stock.score >= 0 ) {
-        if(highGapCloseStock.sentiment === 'bullish') {
-
-          stock.score *= parseFloat(highGapCloseStock.percentChange)
-        } else {
-
-          console.log("wrong sentiment ", highGapCloseStock)
-          stock.score *= - parseFloat(highGapCloseStock.percentChange)
-        }
-      } else {
-
-        if(highGapCloseStock.sentiment === 'bearish') {
-
-          stock.score *= parseFloat(highGapCloseStock.percentChange)
-        } else {
-
-          stock.score *= - parseFloat(highGapCloseStock.percentChange)
-          console.log("wrong sentiment ", stock, highGapCloseStock)
-        }
-      }
-      stock['high gap close'] = parseFloat(highGapCloseStock.percentChange)
+      stocks[highGapCloseStock.asiancercticker].score += parseFloat(highGapCloseStock.percentChange)
+      stocks[highGapCloseStock.asiancercticker]['high gap close'] = parseFloat(highGapCloseStock.percentChange)
     }
   })
 }
